@@ -1,0 +1,470 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+#myMenu {
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    list-style-type: none;
+    top: 30px;
+    left: 75%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    padding: 0;
+}
+
+#myMenu li {
+    position: relative;
+}
+
+#myMenu a {
+    position: relative;
+    width: 120px;
+    height: 40px;
+    font-size: 14px;
+    display: block;
+    color: #DC143C;
+    line-height: 40px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: .5s;
+    box-sizing: border-box;
+    font-weight: 500;
+}
+
+#myMenu a span {
+    position: absolute;
+    width: 25%;
+    height: 100%;
+    background-color: #DC143C;
+    z-index: -1;
+    transform-origin: top;
+    transform: scaleY(0);
+    transition: transform .5s;
+}
+
+#myMenu a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+#myMenu a:hover span {
+    transform-origin: bottom;
+    transform: scaleY(1);
+}
+
+#myMenu a span:nth-child(1) {
+    left: 0;
+    transition-delay: 0s;
+}
+
+#myMenu a span:nth-child(2) {
+    left: 25%;
+    transition-delay: 0.15s;
+}
+
+#myMenu a span:nth-child(3) {
+    left: 50%;
+    transition-delay: 0.3s;
+}
+
+#myMenu a span:nth-child(4) {
+    left: 75%;
+    transition-delay: 0.45s;
+}
+
+.down {
+    position: absolute;
+    z-index: 1;
+    bottom: 1px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    margin: 0 auto;
+    margin-top: 20px;
+    text-decoration: none;
+    outline: none;
+    padding: 5px 20px;
+    display: inline-block;
+    color: #252525;
+    border: 1px solid rgba(0, 0, 0, .0);
+    background: none;
+    font-weight: 5 00;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.down:before {
+    bottom: 0;
+    left: 0;
+    border-left: 1px solid #DC143C;
+    border-top: 1px solid #DC143C;
+    transition: 0s ease opacity .8s, .2s ease width .4s, .2s ease height .6s;
+}
+
+.down:after {
+    top: 0;
+    right: 0;
+    border-right: 1px solid #DC143C;
+    border-bottom: 1px solid #DC143C;
+    transition: 0s ease opacity .4s, .2s ease width, .2s ease height .2s;
+}
+
+.down:hover {
+    background: rgba(220, 20, 60, .1);
+
+}
+
+.down img {
+    width: 40px;
+    height: 40px;
+}
+
+.down:active img {
+    transform: scale(1.5);
+}
+
+.avatar {
+    float: left;
+    width: 50%;
+    height: 100%;
+    background: url(../img/ava.jpg) no-repeat top center;
+    background-size: cover;
+}
+
+.about-text {
+    text-align: center;
+    float: right;
+    width: 50%;
+    height: 100%;
+    color: white;
+}
+
+.container {
+    margin: 8%;
+    margin-top: 50px;
+    margin-bottom: 0;
+}
+
+h1 {
+    font-size: 4em;
+    color: #DC143C;
+    margin-bottom: 10px;
+    font-weight: 400;
+}
+
+.about-me {
+    font-size: 2em;
+    line-height: 120%;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.container p {
+    font-size: 18px;
+    line-height: 1.4;
+    margin-bottom: 1rem;
+}
+
+.container h3 {
+    font-size: 20px;
+    line-height: 1.4;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.contacts {
+    position: relative;
+    width: 250px;
+    list-style-type: none;
+    font-size: 1.5em;
+    line-height: 120%;
+    font-weight: 400;
+    margin-left: 40px;
+}
+
+.contacts li {
+    text-align: left;
+    margin-top: 15px;
+}
+
+.contacts a {
+    text-decoration: none;
+    color: #fff;
+    padding-top: 8px;
+}
+
+.contacts a:hover {
+    color: #DC143C;
+}
+
+.contacts-logo {
+    width: 40px;
+    height: 40px;
+    margin-bottom: -11px;
+}
+
+#particles-js,
+#particles-js2,
+#particles-js3,
+#particles-js4 {
+    position: fixed;
+    right: 0;
+    height: 100%;
+    width: 50%;
+    z-index: 0;
+}
+
+.noselect {
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+.delivery {
+    float: left;
+    width: 50%;
+    height: 100%;
+    background: url(../img/delivery.png) no-repeat top left;
+    background-size: cover;
+}
+
+.delivery-text,
+.brain-games-text,
+.sea-battle-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    float: right;
+    width: 50%;
+    height: 100%;
+}
+
+.steck {
+    margin: 0 auto;
+}
+
+.project {
+    margin: 0 auto;
+    font-size: 4em;
+    margin-bottom: 20px;
+}
+
+.project-text {
+    margin: 0 auto;
+    font-size: 1.5em;
+}
+
+.button-delivery,
+.button-brain-games {
+    margin: 0 auto;
+    margin-top: 20px;
+    text-decoration: none;
+    outline: none;
+    padding: 20px 30px;
+    display: inline-block;
+    position: relative;
+    color: #252525;
+    border: 1px solid rgba(0, 0, 0, .2);
+    background: none;
+    font-weight: 5 00;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.button-delivery:before,
+.button-delivery:after,
+.button-brain-games:before,
+.button-brain-games:after,
+.down:before,
+.down:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    opacity: 0;
+    box-sizing: border-box;
+}
+
+.button-delivery:before {
+    bottom: 0;
+    left: 0;
+    border-left: 1px solid #252525;
+    border-top: 1px solid #252525;
+    transition: 0s ease opacity .8s, .2s ease width .4s, .2s ease height .6s;
+}
+
+.button-delivery:after {
+    top: 0;
+    right: 0;
+    border-right: 1px solid #252525;
+    border-bottom: 1px solid #252525;
+    transition: 0s ease opacity .4s, .2s ease width, .2s ease height .2s;
+}
+
+.button-delivery:hover:before,
+.button-delivery:hover:after,
+.button-brain-games:hover:before,
+.button-brain-games:hover:after,
+.down:hover:before,
+.down:hover:after {
+    height: 100%;
+    width: 100%;
+    opacity: 1;
+}
+
+.button-delivery:hover:before,
+.button-brain-games:hover:before,
+.down:hover:before {
+    transition: 0s ease opacity 0s, .2s ease height, .2s ease width .2s;
+}
+
+.button-delivery:hover:after,
+.button-brain-games:hover:after,
+.down:hover:after {
+    transition: 0s ease opacity .4s, .2s ease height .4s, .2s ease width .6s;
+}
+
+.button-delivery:hover {
+    background: rgba(0, 0, 0, .1);
+}
+
+.brain-games {
+    float: left;
+    width: 48%;
+    margin-left: 2%;
+
+}
+
+.brain-games-text {
+    color: #ccc;
+}
+
+.button-brain-games {
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: #ccc;
+    display: flex;
+    text-transform: none;
+}
+
+.button-brain-games:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.button-brain-games:before {
+    bottom: 0;
+    left: 0;
+    border-left: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+    transition: 0s ease opacity .8s, .2s ease width .4s, .2s ease height .6s;
+}
+
+.button-brain-games:after {
+    top: 0;
+    right: 0;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    transition: 0s ease opacity .4s, .2s ease width, .2s ease height .2s;
+}
+
+.button-brain-games svg {
+    display: inline-block;
+    vertical-align: middle;
+    fill: #fff;
+    width: 20px;
+    height: 20px;
+    margin-right: 0.25rem;
+}
+
+.github {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.button-brain-games span {
+    padding-top: 7px;
+}
+
+.sea-battle {
+    float: left;
+    width: 50%;
+    height: 100%;
+    background: url(../img/seaBattle.jpg) no-repeat top;
+    background-size: cover;
+}
+
+@media (max-width: 1111px) {
+    .about-text {
+        font-size: 12px;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 871px) {
+    .container p {
+        font-size: 16px;
+    }
+    .container h3 {
+        font-size: 16px;
+    }
+    #myMenu a {
+        width: 100px;
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 658px) {
+    #myMenu {
+        left: 50%;
+    }
+}
+
+@media (max-width: 605px) {
+    .down {
+        display: none;
+    }
+    .avatar {
+        width: 100%;
+        height: 50%;
+        background-size: cover;
+    }
+    .about-text {
+        width: 100%;
+        height: 50%;
+    }
+    .about-text {
+        font-size: 8px;
+    }
+    .container {
+        margin-top: 10px;
+    }
+    .container p {
+        font-size: 14px;
+    }
+    .container h3 {
+        font-size: 14px;
+    }
+    .contacts {
+        margin-left: 0;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+    .contacts li {
+        margin-top: 0;
+        display: flex;
+        align-items: center;
+    }
+    .contacts a {
+        margin-left: 8px;
+    }
+}
