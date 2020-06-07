@@ -418,6 +418,10 @@ h1 {
         font-size: 16px;
     }
 
+    #myMenu {
+        top: 20px;
+    }
+
     #myMenu a {
         width: 100px;
         font-size: 12px;
@@ -446,17 +450,14 @@ h1 {
         height: 50%;
     }
 
-    .about-text {
-        font-size: 8px;
-    }
-
     .container {
         margin: 3%;
         margin-top: 10px;
     }
 
     .about-me {
-        margin-bottom: 0;
+       font-size: 14px;
+       margin-bottom: 10px;
     }
 
     .container p {
@@ -464,20 +465,14 @@ h1 {
     }
 
     .container h3 {
-        font-size: 14px;
+        display: none;
     }
 
     .contacts {
         margin-left: 0;
         width: 100%;
-        display: flex;
-        justify-content: space-around;
-    }
 
-    .contacts li {
-        margin-top: 0;
-        display: flex;
-        align-items: center;
+        justify-content: space-around;
     }
 
     .contacts a {
@@ -489,4 +484,44 @@ h1 {
         width: 100%;
     }
 
+}
+
+@media (max-width: 480px) {
+    #myMenu a {
+        width: 80px;
+        font-size: 8px;
+    }
+
+    .container {
+        margin-top: 0;
+    }
+
+    .about-me {
+        font-size: 12px;
+    }
+
+    .container p {
+        font-size: 10px;
+        margin-bottom: 0;
+    }
+
+    h1 {
+        font-size: 24px;
+        margin-bottom: 5px;
+    }
+
+    .contacts {
+        font-size: 12px;
+        margin-top: 0;
+    }
+
+    .contacts li {
+        margin-top: 5px;
+    }
+
+    .contacts-logo {
+        width: 20px;
+        height: 20px;
+        margin-bottom: -5px;
+    }
 }
