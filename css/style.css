@@ -183,13 +183,14 @@ h1 {
     position: relative;
     width: 250px;
     list-style-type: none;
-    font-size: 1.5em;
+    font-size: 20px;
     line-height: 120%;
     font-weight: 400;
     margin-left: 40px;
 }
 
 .contacts li {
+    width: 300px;
     text-align: left;
     margin-top: 15px;
 }
@@ -459,7 +460,7 @@ h1 {
     }
 
     .sea-battle {
-        height: 47%;
+        height: 46%;
     }
 
     .about-text,
