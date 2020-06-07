@@ -424,6 +424,8 @@ h1 {
 
     #myMenu a {
         width: 100px;
+        height: 20px;
+        line-height: 20px;
         font-size: 12px;
     }
 }
@@ -464,15 +466,8 @@ h1 {
         font-size: 14px;
     }
 
-    .container h3 {
-        display: none;
-    }
-
     .contacts {
-        margin-left: 0;
-        width: 100%;
-
-        justify-content: space-around;
+        margin-left: 20px;
     }
 
     .contacts a {
@@ -483,7 +478,6 @@ h1 {
         height: 50%;
         width: 100%;
     }
-
 }
 
 @media (max-width: 480px) {
@@ -503,6 +497,12 @@ h1 {
     .container p {
         font-size: 10px;
         margin-bottom: 0;
+    }
+
+    .container h3 {
+        font-size: 10px;
+        margin-bottom: 0;
+        margin-top: 10px;
     }
 
     h1 {
