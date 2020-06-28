@@ -1,6 +1,6 @@
 new fullpage('#fullpage', {
     autoScrolling: true,
-    sectionsColor: ['#252525', '#fff', '#121314', '#fff'],
+    sectionsColor: ['#252525', '#11111b', '#121314', '#fff'],
     scrollingSpeed: 900,
     scrollBar: false,
     anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage'],
